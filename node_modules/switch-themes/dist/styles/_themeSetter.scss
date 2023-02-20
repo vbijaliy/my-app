@@ -1,0 +1,12 @@
+@import './theme/NewTheme.scss';
+@import './theme/OldTheme.scss';
+
+@function themeSetter($name, $identifier: 'light') {
+    $theme : $OldTheme;
+
+    @if($identifier =='dark') {
+        $theme : $NewTheme;
+    }
+
+    @return var(--theme-#{$name}, map-get($theme, #{$name}))
+}

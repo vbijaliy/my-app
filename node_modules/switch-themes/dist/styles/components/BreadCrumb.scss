@@ -1,0 +1,16 @@
+@import '../theme/NewColors.scss';
+@import '../theme/OldColors.scss';
+
+.vds-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vds-breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "/";
+}

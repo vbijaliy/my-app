@@ -1,0 +1,13 @@
+@import './components/Button';
+@import './components/BreadCrumb';
+@import './themeSetter';
+
+.light {
+    height: 100vh;
+    background-color: themeSetter(primary, 'light');
+}
+
+.dark {
+    height: 100vh;
+    background-color: themeSetter(primary, 'dark');
+}
